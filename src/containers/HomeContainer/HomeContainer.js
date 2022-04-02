@@ -1,10 +1,10 @@
-import './styles.scss';
-import linkedin from '../assets/linkedin-social-network.png';
-import instagram from '../assets/instagram-social-network.png';
-import github from '../assets/github-social-network.png';
-import email from '../assets/email-social-network.png';
+import './HomeContainer.scss';
+import linkedin from '../../assets/linkedin-social-network.png';
+import instagram from '../../assets/instagram-social-network.png';
+import github from '../../assets/github-social-network.png';
+import email from '../../assets/email-social-network.png';
 
-const Home = () => {
+export const HomeContainer = () => {
     return (
         <section className="home">
             <div className="home_container">
@@ -41,5 +41,3 @@ const Home = () => {
         </section>
     );
 }
-
-export default Home;

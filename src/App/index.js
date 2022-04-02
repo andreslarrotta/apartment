@@ -1,6 +1,6 @@
 import './styles.scss';
 import Header from '../Header/index';
-import Home from '../Home/index';
+import Home from '../containers/HomeContainer';
 import ExperienceAll from '../ExperienceAll/index';
 import Portfolio from '../Portfolio/index';
 import Footer from '../Footer/index';
