@@ -8,6 +8,8 @@ import NumeroPiso from '../containers/NumeroPisoContainer';
 import ZonasComunes from '../containers/ZonasComunesContainer';
 import Parqueadero from '../containers/ParqueaderoContainer';
 import MontoImmueble from '../containers/MontoImmuebleContainer';
+import Foto from '../containers/FotoContainer';
+import Ascensor from '../containers/AscensorContainer';
 
 import {
     BrowserRouter as Router,
@@ -20,6 +22,18 @@ const App = () => {
         <>
             <Router>
                 <Switch>
+                    <Route path="/datos-detalles">
+                        <Header />
+                        <Ascensor />
+                    </Route>
+                    <Route path="/datos-ascensor">
+                        <Header />
+                        <Ascensor />
+                    </Route>
+                    <Route path="/datos-foto-immueble">
+                        <Header />
+                        <Foto />
+                    </Route>
                     <Route path="/datos-monto">
                         <Header />
                         <MontoImmueble />
