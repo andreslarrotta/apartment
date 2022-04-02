@@ -7,6 +7,7 @@ import Direccion from '../containers/DireccionContainer';
 import NumeroPiso from '../containers/NumeroPisoContainer';
 import ZonasComunes from '../containers/ZonasComunesContainer';
 import Parqueadero from '../containers/ParqueaderoContainer';
+import MontoImmueble from '../containers/MontoImmuebleContainer';
 
 import {
     BrowserRouter as Router,
@@ -19,6 +20,10 @@ const App = () => {
         <>
             <Router>
                 <Switch>
+                    <Route path="/datos-monto">
+                        <Header />
+                        <MontoImmueble />
+                    </Route>
                     <Route path="/datos-parqueadero">
                         <Header />
                         <Parqueadero />
