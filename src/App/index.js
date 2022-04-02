@@ -4,10 +4,7 @@ import Home from '../containers/HomeContainer';
 import DatosCliente from '../containers/DatosClienteContainer';
 import Correo from '../containers/CorreoContainer';
 import Direccion from '../containers/DireccionContainer';
-
-import ExperienceAll from '../ExperienceAll/index';
-import Portfolio from '../Portfolio/index';
-import Footer from '../Footer/index';
+import NumeroPiso from '../containers/NumeroPisoContainer';
 
 import {
     BrowserRouter as Router,
@@ -20,15 +17,9 @@ const App = () => {
         <>
             <Router>
                 <Switch>
-                    <Route path="/experience/all">
+                    <Route path="/datos-piso">
                         <Header />
-                        <ExperienceAll />
-                        <Footer />
-                    </Route>
-                    <Route path="/portfolio">
-                        <Header />
-                        <Portfolio />
-                        <Footer />
+                        <NumeroPiso />
                     </Route>
                     <Route path="/datos-direccion">
                         <Header />
