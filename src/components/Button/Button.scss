@@ -1,0 +1,16 @@
+@import "../../styles/foundation/foundation.scss";
+
+.button {
+  background: #8512ff;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 19px;
+  border-radius: 12px;
+  color: white;
+  transition: all 0.5s;
+
+  &:hover {
+    color: #8512ff;
+    background: white;
+  }
+}
