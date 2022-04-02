@@ -1,0 +1,25 @@
+@import "../../styles/foundation/foundation.scss";
+
+.text_skills p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+
+  @include breakpoint(medium down) {
+    & {
+      font-size: 15px;
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 20px;
+      font-weight: 400;
+    }
+  }
+  @include breakpoint(small down) {
+    & {
+      width: 100%;
+    }
+  }
+}

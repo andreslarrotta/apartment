@@ -1,0 +1,27 @@
+@import "../styles/foundation/foundation.scss";
+
+header {
+  background: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  .header {
+    &_container {
+      @include xy-grid-container;
+      @include xy-grid;
+      text-align: center;
+
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      img {
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+}

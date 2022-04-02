@@ -1,0 +1,27 @@
+@import "../../../styles/foundation/foundation.scss";
+
+.skills_menu_item {
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  color: #000000;
+  text-transform: uppercase;
+  transition: all 0.5s;
+
+  @include breakpoint(small down) {
+    font-size: 30px;
+  }
+  &.active {
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+.skills_menu_item:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}

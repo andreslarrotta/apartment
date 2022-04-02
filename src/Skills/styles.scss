@@ -1,0 +1,41 @@
+@import "../styles/foundation/foundation.scss";
+
+.skills {
+  background: white;
+  padding: 80px 0;
+  @include breakpoint(small down) {
+    padding: 0 0;
+  }
+  &_container {
+    @include xy-grid;
+    @include xy-grid-container;
+
+    &_header {
+      @include xy-cell(12);
+      @include xy-grid;
+      padding-top: 40px;
+
+      .menu {
+        @include xy-cell(6);
+
+        @include breakpoint(medium down) {
+          @include xy-cell(12);
+          text-align: center;
+        }
+      }
+      .text_skills {
+        @include xy-cell(6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(medium down) {
+          @include xy-cell(12);
+          text-align: center;
+        }
+      }
+    }
+    &_content {
+      padding-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/foundation/foundation.scss";
+
+.skills_container_content_item {
+  width: 50%;
+  display: inline-block;
+  padding: 20px;
+  @include breakpoint(medium down) {
+    @include xy-cell(12);
+    text-align: center;
+    padding: 0px;
+  }
+  .skill_image {
+    display: flex;
+    align-items: baseline;
+    img {
+      border-radius: 10px;
+      width: 50px;
+    }
+    .percent {
+      display: flex;
+      width: 100%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 29px;
+      color: #000000;
+
+      .percent_value {
+        background: black;
+        width: 58%;
+        display: block;
+        height: 10px;
+        border-radius: 16px;
+        margin: 0 16px;
+      }
+    }
+  }
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    color: #000000;
+  }
+}

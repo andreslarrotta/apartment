@@ -1,0 +1,40 @@
+@import "../../styles/foundation/foundation.scss";
+
+.item_portfolio {
+  @include xy-cell(4);
+  @include breakpoint(medium down) {
+    @include xy-cell(12);
+  }
+  &_img {
+    padding: 0;
+    img {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0px 0;
+    }
+  }
+  &_text {
+    background: black;
+    color: white;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 25px;
+
+    h3 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: capitalize;
+    }
+  }
+}

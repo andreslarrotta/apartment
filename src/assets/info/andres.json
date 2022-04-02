@@ -1,0 +1,238 @@
+{
+    "web": {
+        "text": "I'm a so creative person, as a front-end developer it's so important merge the logic and the artistic part to helps to improve the ux and ui that my own webs and apps. I worked as web designer for a long time and I think that I can give my opinion y many situations about design.",
+        "skills": [
+            {
+                "skill": "Figma",
+                "image": "/images/skills/figma.png",
+                "value": 60,
+                "text": "I move good inside the app, I understand the interface to design and export my assets, As a passionate person about design make animations and interactions it was so great."
+            },
+            {
+                "skill": "Photoshop",
+                "image": "/images/skills/photoshop.png",
+                "value": 70,
+                "text": "Photoshop as a main apps to export my workspace, edit photos, crop photos, adapt my images, take a little photo retouching and design my mockups to present my websites to my customers."
+            },
+            {
+                "skill": "Illustrator",
+                "image": "/images/skills/illustrator.png",
+                "value": 40,
+                "text": "Illustrator Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            },
+            {
+                "skill": "XD",
+                "image": "/images/skills/experience.png",
+                "value": 30,
+                "text": "I understand how I can to export files and the workflow , understand the comments from the designers and use their tools to do my work the better way."
+            }
+        ]
+    },
+    "develop": {
+        "text": "I'm a passionate about tech, I like to learn all about new technologies, think that the future is now. have a good bases to build the better way to make webs and apps.",
+        "skills": [
+            {
+                "skill": "HTML",
+                "image": "/images/skills/html-5.png",
+                "value": 80,
+                "text": ""
+            },
+            {
+                "skill": "CSS3",
+                "image": "/images/skills/css-3.png",
+                "value": 80,
+                "text": " "
+            },
+            {
+                "skill": "JavaScript",
+                "image": "/images/skills/javascript.png",
+                "value": 70,
+                "text": " "
+            },
+            {
+                "skill": "React",
+                "image": "/images/skills/reactjs.png",
+                "value": 60,
+                "text": " "
+            },
+            {
+                "skill": "Node.js",
+                "image": "/images/skills/node-js.png",
+                "value": 50,
+                "text": " "
+            },
+            {
+                "skill": "Github",
+                "image": "/images/skills/github.png",
+                "value": 70,
+                "text": " "
+            },
+            {
+                "skill": "PWA",
+                "image": "/images/skills/pwa.png",
+                "value": 80,
+                "text": " "
+            },
+            {
+                "skill": "SASS",
+                "image": "/images/skills/sass.png",
+                "value": 80,
+                "text": " "
+            },
+            {
+                "skill": "Greensock",
+                "image": "/images/skills/greensock.png",
+                "value": 50,
+                "text": " "
+            },
+            {
+                "skill": "Foundation",
+                "image": "/images/skills/foundation.jpeg",
+                "value": 70,
+                "text": " "
+            },
+            {
+                "skill": "UX / UI",
+                "image": "/images/skills/ux.png",
+                "value": 70,
+                "text": " "
+            },
+            {
+                "skill": "Gulp",
+                "image": "/images/skills/gulp.png",
+                "value": 80,
+                "text": " "
+            },
+            {
+                "skill": "WebPack",
+                "image": "/images/skills/webpack.png",
+                "value": 80,
+                "text": " "
+            }
+        ]
+    },
+    "commerce": {
+        "text": "In my way to improve my skills I found that amazing and incredible adventure that is build e-commerce sites. I know that all the time we think to change the future and it's a long time, but now we have so many tools to create it.",
+        "skills": [
+            {
+                "skill": "Vtex",
+                "image": "/images/skills/vtex.jpeg",
+                "value": 70,
+                "text": "in the vtex world I'm front-end developer in vtex legacy and vtexIO, use the vtex CMS to know all about promotions, clusters, catalog , producto and more, to make a good e-commerce sites and bring you the better experience to our costumers."
+            }
+        ]
+    },
+    "experience": {
+        "companies": [
+            {
+                "name": "Isobar Colombia",
+                "image": "/images/experience/isobar.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2021",
+                "endDate": "Current",
+                "description": "As a Front-end developer in vtex io, I'm making e-commerce apps to improve the performance and market of the clients, all using react, graphQL, and node to make the apps so optimized."
+            },
+            {
+                "name": "Titamedia",
+                "image": "/images/experience/titamedia.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2019",
+                "endDate": "2021",
+                "description": "I was part of the development team to made e-commerce sites in vtex legacy and vtex IO, I was the leader of projects of innovation and I participated in so many groups of investigation."
+            },
+            {
+                "name": "CodeLabs",
+                "image": "/images/experience/codelabs.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2017",
+                "endDate": "2019",
+                "description": "I did the programming of the interactivity of the landing page and emails with Davivienda customer databases, from same way I participate in the required engineering developments of according to the needs."
+            }
+        ],
+        "companiesall": [
+            {
+                "name": "Isobar Colombia",
+                "image": "/images/experience/isobar.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2021",
+                "endDate": "Current",
+                "description": "As a Front-end developer in vtex io, I'm making e-commerce apps to improve the performance and market of the clients, all using react, graphQL, and node to make the apps so optimized."
+            },
+            {
+                "name": "Titamedia",
+                "image": "/images/experience/titamedia.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2019",
+                "endDate": "2021",
+                "description": "I was part of the development team to made e-commerce sites in vtex legacy and vtex IO, I was the leader of projects of innovation and I participated in so many groups of investigation."
+            },
+            {
+                "name": "CodeLabs",
+                "image": "/images/experience/codelabs.jpg",
+                "cargo": "Front-end Developer",
+                "startDate": "2017",
+                "endDate": "2019",
+                "description": "I did the programming of the interactivity of the landing page and emails with Davivienda customer databases, from same way I participate in the required engineering developments of according to the needs."
+            },
+            {
+                "name": "Universidad Manuela Beltrán",
+                "image": "/images/experience/umb.jpg",
+                "cargo": "Web Master",
+                "startDate": "2017",
+                "endDate": "2017",
+                "description": "I was part of the marketing team, Be a manager to campaigns inside and outside of the University, making websites for events and academic programs, I was a designer too, making pieces for social networks."
+            },
+            {
+                "name": "Alcabama",
+                "image": "/images/experience/alcabama.jpg",
+                "cargo": "Web Designer and Developer",
+                "startDate": "2016",
+                "endDate": "2017",
+                "description": "I was charged to build, plan, design, and develop the website, applying good practices to make an investigation to improve the UX and UI, all developed with Html, CSS , Javascript."
+            },
+            {
+                "name": "Dinissan",
+                "image": "/images/experience/dinissan.jpg",
+                "cargo": "Multimedia Engineer",
+                "startDate": "2015",
+                "endDate": "2016",
+                "description": "I was part of the Capacitation Team, built material to the taught business and post-sales help them to improve skills of gave good service to the customers"
+            },
+            {
+                "name": "Cristal-Code",
+                "image": "/images/experience/cristalcode.jpg",
+                "cargo": "Multimedia Engineer",
+                "startDate": "2014",
+                "endDate": "2015",
+                "description": "I created processes to optimize times to make a good way to build a software project, in this case, websites, since a design and development area."
+            }
+        ]
+    },
+    "portfolio": [
+        {
+            "image": "/images/portfolio_dummi.jpg",
+            "title": "Isobar - 2021",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "image": "/images/portfolio_dummi.jpg",
+            "title": "Titamedia - 2020",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "image": "/images/portfolio_dummi.jpg",
+            "title": "Titamedia - 2019",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "image": "/images/portfolio_dummi.jpg",
+            "title": "Alcabama - 2018",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        {
+            "image": "/images/portfolio_dummi.jpg",
+            "title": "Alcabama - 2018",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        }
+    ]
+}

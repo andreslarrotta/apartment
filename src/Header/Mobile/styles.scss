@@ -1,0 +1,94 @@
+@import "../../styles/foundation/foundation.scss";
+
+header {
+  background: white;
+  border-bottom: 1 px solid black;
+  &.active {
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    height: 100vh;
+    nav {
+      display: block !important;
+    }
+  }
+  .header {
+    &_container {
+      @include xy-grid-container;
+      @include xy-grid;
+    }
+    &_column_mobile {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 8px;
+      position: relative;
+
+      @include xy-cell(6);
+
+      &_mobile_menu {
+        position: absolute;
+      }
+      @include breakpoint(medium down) {
+        @include xy-cell(12);
+      }
+
+      img {
+        width: 60px;
+
+        text-align: left;
+        display: block;
+
+        @include breakpoint(medium down) {
+          text-align: center;
+          display: inline;
+        }
+      }
+      nav {
+        display: none;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        li {
+          display: block;
+          height: 10%;
+          a {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: black;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .download {
+          background: black;
+          padding: 8px 18px;
+          display: flex;
+          align-items: center;
+          border-radius: 20px;
+          transition: all 0.5s;
+
+          a {
+            color: white;
+          }
+          &:hover {
+            background: white;
+            outline: 1px solid black;
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

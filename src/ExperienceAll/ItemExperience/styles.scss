@@ -1,0 +1,60 @@
+@import "../../styles/foundation/foundation.scss";
+
+.item_experience {
+  padding: 20px;
+  margin: 25px 0;
+  transition: all 0.5s;
+
+  &:hover {
+    background: #fee700;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .item_experience_company {
+      img {
+        filter: grayscale(1);
+      }
+    }
+    .item_experience_see_more {
+      a {
+        background: black;
+        color: white;
+      }
+    }
+  }
+  &_company {
+    display: flex;
+    align-items: baseline;
+
+    h3 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      margin-left: 10px;
+    }
+  }
+  &_description {
+    p {
+      @include breakpoint(small down) {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &_see_more {
+    text-align: right;
+    a {
+      text-decoration: none;
+      background: white;
+      color: black;
+      font-family: Roboto;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+  }
+}
