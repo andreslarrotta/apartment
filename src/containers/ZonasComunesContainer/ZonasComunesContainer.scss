@@ -1,0 +1,41 @@
+@import "../../styles/foundation/foundation.scss";
+
+.steps {
+  background: #f6fcff;
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  @include xy-grid;
+  @include xy-grid-container;
+
+  .steps_container {
+    &_form {
+      &--zonas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #8512ff;
+        font-size: 30px;
+        font-family: ubuntu;
+        margin: 20px 0;
+      }
+
+      &--zona {
+        background: #fefefe;
+        border: 1px solid #aaecff;
+        box-shadow: none;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 0 15px;
+
+        img {
+          margin: 0 auto;
+          width: 86px;
+          display: block;
+          padding: 12px;
+        }
+      }
+    }
+  }
+}

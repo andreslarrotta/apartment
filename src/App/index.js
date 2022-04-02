@@ -5,6 +5,7 @@ import DatosCliente from '../containers/DatosClienteContainer';
 import Correo from '../containers/CorreoContainer';
 import Direccion from '../containers/DireccionContainer';
 import NumeroPiso from '../containers/NumeroPisoContainer';
+import ZonasComunes from '../containers/ZonasComunesContainer'; 
 
 import {
     BrowserRouter as Router,
@@ -17,6 +18,10 @@ const App = () => {
         <>
             <Router>
                 <Switch>
+                    <Route path="/datos-zonas-comunes">
+                        <Header />
+                        <ZonasComunes />
+                    </Route>
                     <Route path="/datos-piso">
                         <Header />
                         <NumeroPiso />
