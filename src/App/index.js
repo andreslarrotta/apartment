@@ -10,6 +10,7 @@ import Parqueadero from '../containers/ParqueaderoContainer';
 import MontoImmueble from '../containers/MontoImmuebleContainer';
 import Foto from '../containers/FotoContainer';
 import Ascensor from '../containers/AscensorContainer';
+import Detalle from '../containers/DetalleContainer';
 
 import {
     BrowserRouter as Router,
@@ -24,7 +25,7 @@ const App = () => {
                 <Switch>
                     <Route path="/datos-detalles">
                         <Header />
-                        <Ascensor />
+                        <Detalle />
                     </Route>
                     <Route path="/datos-ascensor">
                         <Header />
