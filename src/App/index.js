@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Home from '../containers/HomeContainer';
 import DatosCliente from '../containers/DatosClienteContainer';
 import Correo from '../containers/CorreoContainer';
+import Direccion from '../containers/DireccionContainer';
 
 import ExperienceAll from '../ExperienceAll/index';
 import Portfolio from '../Portfolio/index';
@@ -28,6 +29,10 @@ const App = () => {
                         <Header />
                         <Portfolio />
                         <Footer />
+                    </Route>
+                    <Route path="/datos-direccion">
+                        <Header />
+                        <Direccion />
                     </Route>
                     <Route path="/datos-correo">
                         <Header />
