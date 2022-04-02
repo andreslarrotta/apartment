@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles.scss';
-import logo from '../assets/habi-logo.png';
+import './Header.scss';
+import logo from '../../assets/habi-logo.png';
 
-const Header = () => {
+export const Header = () => {
 
     return (
         <header>
@@ -16,5 +16,3 @@ const Header = () => {
         </header>
     );
 }
-
-export default Header;

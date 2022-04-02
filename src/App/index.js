@@ -1,6 +1,8 @@
 import './styles.scss';
-import Header from '../Header/index';
+import Header from '../components/Header';
 import Home from '../containers/HomeContainer';
+import DatosCliente from '../containers/DatosClienteContainer';
+
 import ExperienceAll from '../ExperienceAll/index';
 import Portfolio from '../Portfolio/index';
 import Footer from '../Footer/index';
@@ -25,6 +27,10 @@ const App = () => {
                         <Header />
                         <Portfolio />
                         <Footer />
+                    </Route>
+                    <Route path="/datos-cliente">
+                        <Header />
+                        <DatosCliente />
                     </Route>
                     <Route path="/">
                         <Header />
