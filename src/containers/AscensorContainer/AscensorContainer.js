@@ -3,13 +3,14 @@ import React from 'react'
 import './AscensorContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
+import Steps from '../../components/Steps'
 
 export const AscensorContainer = () => {
     return (
         <section className="steps">
             <div className="steps_container">
                 <div className="steps_container_state">
-                    aqui va el estado de los pasos
+                    <Steps id={8}/>
                 </div>
                 <div className="steps_container_content">
                     <SectionTitle

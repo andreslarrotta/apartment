@@ -1,0 +1,43 @@
+@import "../../styles/foundation/foundation.scss";
+
+.steps-list {
+  .steps-list-ul {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+
+    .steps-list-item {
+      list-style: none;
+      position: relative;
+      text-align: center;
+      font-size: 0;
+      width: 80px;
+
+      &.active {
+        font-size: 13px;
+        a::before {
+          background: #8512ff;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #8512ff;
+
+        &::before {
+          content: "";
+          background: gray;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

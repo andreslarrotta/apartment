@@ -3,6 +3,7 @@ import React from 'react'
 import './ZonasComunesContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
+import Steps from '../../components/Steps'
 
 import icon from '../../assets/Icons/bbq-svgrepo-com.svg';
 
@@ -11,7 +12,7 @@ export const ZonasComunesContainer = () => {
         <section className="steps">
             <div className="steps_container">
                 <div className="steps_container_state">
-                    aqui va el estado de los pasos
+                    <Steps id={4}/>
                 </div>
                 <div className="steps_container_content">
                     <SectionTitle
