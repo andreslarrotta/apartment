@@ -2,7 +2,6 @@ import React from 'react'
 
 import './DetalleContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
-import Button from '../../components/Button'
 import Steps from '../../components/Steps'
 import Detalles from '../../components/Detalles'
 

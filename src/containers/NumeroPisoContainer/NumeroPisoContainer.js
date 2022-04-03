@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './NumeroPisoContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
@@ -6,6 +6,34 @@ import Button from '../../components/Button'
 import Steps from '../../components/Steps'
 
 export const NumeroPisoContainer = () => {
+    const numerosPisosMax = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
+    const [dataStorage, setDataStorage] = useState({})
+    const [pisoStorage, setPisoStorage] = useState('')
+
+    const handlePisos = () => {
+        let piso = document.querySelector('select[name="pisos"]').value
+        if (piso) {
+            dataStorage.piso = piso
+            localStorage.setItem('dataHabi', JSON.stringify(dataStorage));
+            window.location.href = "/datos-zonas-comunes"
+        }
+    }
+
+    useEffect(() => {
+
+        let dataHabi = localStorage.getItem('dataHabi');
+
+        if (dataHabi) {
+            setDataStorage(JSON.parse(dataHabi))
+            setPisoStorage(JSON.parse(dataHabi).piso)
+        } else {
+            localStorage.setItem('dataHabi', '{}');
+            console.log(JSON.parse(dataHabi))
+        }
+        document.querySelector('select[name="pisos"]').value = pisoStorage
+    }, [])
+
+
     return (
         <section className="steps">
             <div className="steps_container">
@@ -20,15 +48,24 @@ export const NumeroPisoContainer = () => {
                     />
                     <div className="steps_container_form">
                         <div className="steps_container_form--pisos">
-                            <select name="select">
-                                <option value="value1">1</option>
-                                <option value="value2" selected>2</option>
-                                <option value="value3">3</option>
+
+                            <select name="pisos">
+                                {
+                                    numerosPisosMax.map((option) => {
+                                        if (option === pisoStorage) {
+                                            return <option value={option} selected>{option}</option>
+                                        }
+                                        else {
+                                            return <option value={option}>{option}</option>
+                                        }
+                                    })
+                                }
                             </select>
                             Piso
                         </div>
-
-                        <Button title={'Continuar'} />
+                        <div onClick={handlePisos}>
+                            <Button title={'Continuar'} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -45,6 +45,10 @@
           border-radius: 8px;
           margin-bottom: 20px;
 
+          &.hidden {
+            display: none;
+          }
+          
           &_content {
             display: flex;
             align-items: center;

@@ -4,8 +4,8 @@ import './Button.scss';
 
 export const Button = ({ title }) => {
     return (
-        <a className='button' href='/'>
+        <button className='button' href='/'>
             {title}
-        </a>
+        </button>
     );
 }

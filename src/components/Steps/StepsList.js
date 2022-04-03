@@ -5,10 +5,38 @@ export const StepsList = ({ id }) => {
     console.log('hola', id);
 
     useEffect(() => {
+        let dataHabi = localStorage.getItem('dataHabi');
         let items = document.querySelectorAll('.steps-list-item')
+
+        if (dataHabi) {
+            let dataJson = JSON.parse(dataHabi)
+
+            if (dataJson.nombre) {
+                items[0].classList.add('fill')
+            }
+            if (dataJson.correo) {
+                items[1].classList.add('fill')
+            }
+            if (dataJson.direccion) {
+                items[2].classList.add('fill')
+            }
+
+            if (dataJson.piso) {
+                items[3].classList.add('fill')
+            }
+
+            if (dataJson.zonabbq || dataJson.salon || dataJson.parque) {
+                items[4].classList.add('fill')
+            }
+
+            if (dataJson.parqueadero === true || dataJson.parqueadero === false) {
+                items[5].classList.add('fill')
+            }
+        }
+
+
         items[id].classList.add('active')
     })
-
 
     return (
         <div className='steps-list'>
@@ -30,7 +58,7 @@ export const StepsList = ({ id }) => {
                     </a>
                 </li>
                 <li className='steps-list-item'>
-                    <a href='/datos-direccion'>
+                    <a href='/datos-direccion' disabled>
                         <div>
                             3.
                         </div>

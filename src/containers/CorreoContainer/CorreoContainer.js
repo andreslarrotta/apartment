@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './CorreoContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
@@ -6,6 +6,37 @@ import Button from '../../components/Button'
 import Steps from '../../components/Steps'
 
 export const CorreoContainer = () => {
+    const [dataStorage, setDataStorage] = useState({})
+    const [correoStorage, setCorreoStorage] = useState('')
+
+    const handleCorreo = () => {
+        let correo = document.querySelector('input[name="correo"]').value
+        if (correo) {
+            dataStorage.correo = correo
+            localStorage.setItem('dataHabi', JSON.stringify(dataStorage));
+            window.location.href = "/datos-direccion"
+        }
+    }
+
+    const handleTyping = (e) => {
+        console.log(e.target.value)
+        setCorreoStorage(e.target.value)
+    }
+
+    useEffect(() => {
+
+        let dataHabi = localStorage.getItem('dataHabi');
+
+        if (dataHabi) {
+            setDataStorage(JSON.parse(dataHabi))
+            setCorreoStorage(JSON.parse(dataHabi).correo)
+        } else {
+            localStorage.setItem('dataHabi', '{}');
+            console.log(JSON.parse(dataHabi))
+        }
+
+    }, [])
+
     return (
         <section className="steps">
             <div className="steps_container">
@@ -19,8 +50,10 @@ export const CorreoContainer = () => {
                         color={'#8512ff'}
                     />
                     <div className="steps_container_form">
-                        <input type='email' placeholder='hola@habi.com' required />
-                        <Button title={'Continuar'} />
+                        <input name="correo" type='email' placeholder='hola@habi.com' required value={correoStorage} onChange={handleTyping} />
+                        <div onClick={handleCorreo}>
+                            <Button title={'Continuar'} />
+                        </div>
                     </div>
                 </div>
             </div>
