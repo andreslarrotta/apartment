@@ -9,6 +9,10 @@
     color: #000000;
     text-align: left;
     line-height: initial;
+
+    @include breakpoint(small down) {
+      font-size: 40px;
+    }
   }
 
   .section_title--h2 {
@@ -19,5 +23,8 @@
     color: #000000;
     text-align: left;
     line-height: initial;
+    @include breakpoint(small down) {
+      font-size: 30px;
+    }
   }
 }

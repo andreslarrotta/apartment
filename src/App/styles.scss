@@ -15,6 +15,11 @@
         @include xy-cell(9);
         height: 100%;
 
+        @include breakpoint(medium down) {
+            @include xy-cell(12);
+            overflow: scroll;
+        }
+
         &_state {
             @include xy-cell(12);
         }
@@ -41,5 +46,15 @@
     }
     .data_container {
         @include xy-cell(3);
+
+        @include breakpoint(medium down) {
+            @include xy-cell(12);
+            height: 100vh;
+            overflow: scroll;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
     }
 }
