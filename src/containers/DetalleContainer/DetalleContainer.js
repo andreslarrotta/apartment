@@ -7,7 +7,7 @@ import Detalles from '../../components/Detalles'
 
 export const DetalleContainer = () => {
     return (
-        <section className="steps">
+        <section className="steps detalles_seccion">
             <div className="steps_container">
                 <div className="steps_container_state">
                     <Steps id={9} />

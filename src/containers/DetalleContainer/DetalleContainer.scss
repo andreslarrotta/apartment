@@ -8,6 +8,18 @@
   @include xy-grid;
   @include xy-grid-container;
 
+  &.detalles_seccion {
+    .steps_container_state {
+      @include xy-cell(12);
+      .steps-list-ul {
+        justify-content: center;
+      }
+    }
+    .steps_container {
+      @include xy-cell(12);
+    }
+  }
+
   .steps_container {
     &_form {
       &_detalle {
@@ -18,6 +30,13 @@
 
         @include breakpoint(medium down) {
           width: 100%;
+
+          .detalles {
+            display: block;
+          }
+          .detalles_mobile_icon {
+            display: none;
+          }
         }
       }
     }

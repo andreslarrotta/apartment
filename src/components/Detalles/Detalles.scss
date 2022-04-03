@@ -8,6 +8,10 @@
   padding: 25px;
   height: 90%;
 
+  @include breakpoint(medium down) {
+    display: none;
+  }
+
   &_emply {
     display: flex;
     align-items: center;
@@ -24,6 +28,24 @@
         color: gray;
         font-family: "Ubuntu";
       }
+    }
+  }
+
+  &_mobile_icon {
+    background: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 9;
+
+    img {
+      width: 30px;
     }
   }
 
