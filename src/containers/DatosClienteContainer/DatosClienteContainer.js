@@ -67,7 +67,14 @@ export const DatosClienteContainer = () => {
                         color={'#8512ff'}
                     />
                     <div className="steps_container_form">
-                        <input name='nombre' type='text' placeholder='Sebastian Nogera' required value={nombreStorage} onChange={handleTyping} />
+                        <input
+                            name='nombre'
+                            type='text'
+                            placeholder='Sebastian Nogera'
+                            required
+                            value={nombreStorage}
+                            onChange={handleTyping}
+                        />
                         <div onClick={handleDatosCliente}>
                             <Button title={'Continuar'} />
                         </div>

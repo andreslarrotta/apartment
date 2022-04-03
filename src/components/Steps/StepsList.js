@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './StepsList.scss';
 
 export const StepsList = ({ id }) => {
-    console.log('hola', id);
 
     useEffect(() => {
         let dataHabi = localStorage.getItem('dataHabi');
@@ -31,6 +30,18 @@ export const StepsList = ({ id }) => {
 
             if (dataJson.parqueadero === true || dataJson.parqueadero === false) {
                 items[5].classList.add('fill')
+            }
+
+            if (dataJson.monto) {
+                items[6].classList.add('fill')
+            }
+
+            if (dataJson.foto) {
+                items[7].classList.add('fill')
+            }
+
+            if (dataJson.ascensor === false || dataJson.ascensor === true) {
+                items[8].classList.add('fill')
             }
         }
 
