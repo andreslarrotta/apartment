@@ -1,0 +1,33 @@
+@import "../../styles/foundation/foundation.scss";
+
+.detalles {
+  background: #fefefe;
+  border: 1px solid #aaecff;
+  box-shadow: none;
+  border-radius: 10px;
+  padding: 10px;
+
+  ul {
+    margin: 0;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        color: gray;
+        font-family: ubuntu;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: gray;
+        font-family: ubuntu;
+        margin: 0;
+      }
+    }
+  }
+}

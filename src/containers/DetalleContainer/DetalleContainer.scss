@@ -15,33 +15,6 @@
         width: 50%;
         margin: 0 auto;
         margin-bottom: 20px;
-        background: #fefefe;
-        border: 1px solid #aaecff;
-        box-shadow: none;
-        border-radius: 10px;
-
-        ul {
-          li {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            span {
-              font-size: 16px;
-              font-weight: 700;
-              color: gray;
-              font-family: ubuntu;
-            }
-            
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              color: gray;
-              font-family: ubuntu;
-              margin: 0;
-            }
-          }
-        }
       }
     }
   }

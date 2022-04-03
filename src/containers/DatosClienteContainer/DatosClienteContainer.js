@@ -4,6 +4,7 @@ import './DatosClienteContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
 import Steps from '../../components/Steps'
+import Detalles from '../../components/Detalles'
 
 export const DatosClienteContainer = () => {
     return (
@@ -25,7 +26,7 @@ export const DatosClienteContainer = () => {
                 </div>
             </div>
             <div className="data_container">
-                aqui van todos los datos
+                <Detalles />
             </div>
         </section>
     );

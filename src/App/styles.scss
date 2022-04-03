@@ -11,7 +11,7 @@
     .steps_container {
         @include xy-grid;
         @include xy-grid-container;
-        @include xy-cell(10);
+        @include xy-cell(9);
         height: 100%;
 
         &_state {
@@ -39,6 +39,6 @@
         }
     }
     .data_container {
-        @include xy-cell(2);
+        @include xy-cell(3);
     }
 }
