@@ -4,6 +4,7 @@ import './MontoImmuebleContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
 import Steps from '../../components/Steps'
+import Detalles from '../../components/Detalles'
 
 export const MontoImmuebleContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
@@ -63,7 +64,7 @@ export const MontoImmuebleContainer = () => {
                 </div>
             </div>
             <div className="data_container">
-                aqui van todos los datos
+                <Detalles />
             </div>
         </section>
     );

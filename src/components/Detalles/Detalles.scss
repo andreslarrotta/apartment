@@ -5,14 +5,34 @@
   border: 1px solid #aaecff;
   box-shadow: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
+  height: 90%;
+
+  &_emply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+
+    &_container {
+      p {
+        font-size: 13px;
+        margin: 14px 0;
+        font-weight: 600;
+        color: gray;
+        font-family: "Ubuntu";
+      }
+    }
+  }
 
   ul {
     margin: 0;
+    overflow: hidden;
+
     li {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: block;
 
       span {
         font-size: 16px;
@@ -27,6 +47,9 @@
         color: gray;
         font-family: ubuntu;
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
   }

@@ -5,6 +5,10 @@ import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
 
 export const HomeContainer = () => {
+    const handleStart = () => {
+        localStorage.setItem('dataHabi', '{}');
+        window.location.href = '/datos-cliente'
+    }
     return (
         <section className="home">
             <div className="home_container">
@@ -15,7 +19,9 @@ export const HomeContainer = () => {
                             subtitle={'Nos cuentas de tu inmueble y solicitas la oferta'}
                             color={'white'}
                         />
-                        <Button title={'Vender'} />
+                        <div onClick={handleStart}>
+                            <Button title={'Vender'} />
+                        </div>
                     </div>
                 </div>
             </div>

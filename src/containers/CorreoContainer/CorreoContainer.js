@@ -4,6 +4,7 @@ import './CorreoContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
 import Steps from '../../components/Steps'
+import Detalles from '../../components/Detalles'
 
 export const CorreoContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
@@ -58,7 +59,7 @@ export const CorreoContainer = () => {
                 </div>
             </div>
             <div className="data_container">
-                aqui van todos los datos
+                <Detalles />
             </div>
         </section>
     );

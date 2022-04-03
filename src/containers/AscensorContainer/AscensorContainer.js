@@ -4,6 +4,7 @@ import './AscensorContainer.scss';
 import SectionTitle from '../../components/SectionTitle'
 import Button from '../../components/Button'
 import Steps from '../../components/Steps'
+import Detalles from '../../components/Detalles'
 
 export const AscensorContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
@@ -84,7 +85,7 @@ export const AscensorContainer = () => {
                 </div>
             </div>
             <div className="data_container">
-                aqui van todos los datos
+                <Detalles />
             </div>
         </section>
     );
