@@ -56,7 +56,7 @@ export const Detalles = () => {
             {
                 mobile &&
                 <div className="detalles_mobile_icon" onClick={handleModal}>
-                    <img src={open ? detallesIconClose : detallesIcon} alt='menu mobile'/>
+                    <img src={open ? detallesIconClose : detallesIcon} alt='menu mobile' />
                 </div>
             }
             <div className="detalles">
@@ -64,7 +64,7 @@ export const Detalles = () => {
                     vacio
                         ? <div className='detalles_emply'>
                             <div className='detalles_emply_container'>
-                                <img src={emplyIcon} alt='apartamento vacio'/>
+                                <img src={emplyIcon} alt='apartamento vacio' />
                                 <p>
                                     La información de tu apartamento esta vacía completa todos los pasos
                                 </p>
@@ -129,7 +129,10 @@ export const Detalles = () => {
                                             <span>Parqueadero</span>
                                             <p>NO</p>
                                         </li>
-                                    : ''
+                                    : <li>
+                                        <span>Parqueadero</span>
+                                        <p>NO</p>
+                                    </li>
                             }
                             {
                                 dataStorage.parqueadero === true && dataStorage.cubierto === true
@@ -149,7 +152,7 @@ export const Detalles = () => {
                                 dataStorage.monto &&
                                 <li>
                                     <span>Monto del apartamento</span>
-                                    <p>{dataStorage.monto}</p>
+                                    <p>{`$ ${dataStorage.monto} COP`}</p>
                                 </li>
                             }
                             {
@@ -171,7 +174,10 @@ export const Detalles = () => {
                                             <p>NO</p>
                                         </li>
 
-                                    : ''
+                                    : <li>
+                                        <span>Ascensor</span>
+                                        <p>NO</p>
+                                    </li>
                             }
                         </ul>
                 }

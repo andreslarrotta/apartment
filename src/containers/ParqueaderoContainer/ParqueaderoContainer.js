@@ -96,7 +96,7 @@ export const ParqueaderoContainer = () => {
                             <div className={`steps_container_form_parqueadero--cubierto ${parqueadero ? '' : 'hidden'}`}>
                                 <SectionTitle
                                     title={''}
-                                    subtitle={'¿Tiene parqueadero cubierto?'}
+                                    subtitle={'¿El parqueadero es cubierto?'}
                                     color={'#8512ff'}
                                 />
                                 <div className="steps_container_form_parqueadero--cubierto_content">

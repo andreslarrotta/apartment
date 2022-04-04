@@ -45,7 +45,7 @@ export const DireccionContainer = () => {
                 <div className="steps_container_content">
                     <SectionTitle
                         title={'Dirección del apartamento'}
-                        subtitle={'Indicanos el lugar del apartamento'}
+                        subtitle={'Indícanos dónde queda tu apartamento'}
                         color={'#8512ff'}
                     />
                     <div className="steps_container_form">

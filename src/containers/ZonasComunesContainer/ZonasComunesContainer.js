@@ -67,7 +67,7 @@ export const ZonasComunesContainer = () => {
                 <div className="steps_container_content">
                     <SectionTitle
                         title={'Zonas Comunes'}
-                        subtitle={'Selecciona si tienes alguna zona común'}
+                        subtitle={'Selecciona si tienes alguna de estas zonas comúnes'}
                         color={'#8512ff'}
                     />
                     <div className="steps_container_form">

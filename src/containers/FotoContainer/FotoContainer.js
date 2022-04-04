@@ -36,7 +36,7 @@ export const FotoContainer = () => {
                 </div>
                 <div className="steps_container_content">
                     <SectionTitle
-                        title={'Foto del Immueble'}
+                        title={'Foto del Inmueble'}
                         subtitle={''}
                         color={'#8512ff'}
                     />

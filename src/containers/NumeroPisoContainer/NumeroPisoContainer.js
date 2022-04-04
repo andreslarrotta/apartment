@@ -43,7 +43,7 @@ export const NumeroPisoContainer = () => {
                 <div className="steps_container_content">
                     <SectionTitle
                         title={'Numero de piso'}
-                        subtitle={'donde se encuentra el apartamento'}
+                        subtitle={'Indícanos en que piso se encuentra tu apartamento'}
                         color={'#8512ff'}
                     />
                     <div className="steps_container_form">

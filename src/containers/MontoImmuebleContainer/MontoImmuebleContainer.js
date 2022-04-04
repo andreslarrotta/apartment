@@ -42,7 +42,7 @@ export const MontoImmuebleContainer = () => {
                 </div>
                 <div className="steps_container_content">
                     <SectionTitle
-                        title={'Monto del immueble'}
+                        title={'Monto del inmueble'}
                         subtitle={''}
                         color={'#8512ff'}
                     />
