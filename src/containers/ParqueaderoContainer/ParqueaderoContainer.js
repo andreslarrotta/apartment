@@ -57,9 +57,6 @@ export const ParqueaderoContainer = () => {
 
     }, [])
 
-    console.log('parquedero?', parqueadero)
-    console.log('cubierto?', cubierto)
-
     return (
         <section className="steps">
             <div className="steps_container">

@@ -29,7 +29,6 @@ export const NumeroPisoContainer = () => {
             setPisoStorage(JSON.parse(dataHabi).piso)
         } else {
             localStorage.setItem('dataHabi', '{}');
-            console.log(JSON.parse(dataHabi))
         }
         document.querySelector('select[name="pisos"]').value = pisoStorage
     }, [])

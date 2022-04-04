@@ -19,7 +19,6 @@ export const Detalles = () => {
         else {
             setMobile(false)
         }
-        console.log(width);
     }
 
     const handleModal = () => {

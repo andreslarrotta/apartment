@@ -20,7 +20,6 @@ export const DireccionContainer = () => {
     }
 
     const handleTyping = (e) => {
-        console.log(e.target.value)
         setDireccionStorage(e.target.value)
     }
 
@@ -33,7 +32,6 @@ export const DireccionContainer = () => {
             setDireccionStorage(JSON.parse(dataHabi).direccion)
         } else {
             localStorage.setItem('dataHabi', '{}');
-            console.log(JSON.parse(dataHabi))
         }
 
     }, [])

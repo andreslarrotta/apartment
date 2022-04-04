@@ -20,7 +20,6 @@ export const MontoImmuebleContainer = () => {
     }
 
     const handleTyping = (e) => {
-        console.log(e.target.value)
         setMontoStorage(e.target.value)
     }
 

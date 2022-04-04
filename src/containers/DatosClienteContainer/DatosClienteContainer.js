@@ -9,22 +9,6 @@ import Detalles from '../../components/Detalles'
 export const DatosClienteContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
     const [nombreStorage, setNombreStorage] = useState('')
-    /* 
-        let data = {
-            nombre: "andres",
-            correo: "andres@gmail.com",
-            direccion: "Cra 69 D # 1-10 sur",
-            piso: 2,
-            zonas: ['zonas', 'zonas', 'zonas'],
-            parqueadero: true,
-            cubierto: true,
-            monto: 2000000000,
-            foto: "",
-            ascensor: true
-        }
-        let dataString = '{"nombre":"andres","correo":"andres@gmail.com","direccion":"Cra 69 D # 1-10 sur","piso":2,"zonas":["zonas","zonas","zonas"],"parqueadero":true,"cubierto":true,"monto":2000000000,"foto":"","ascensor":true}'
-        console.log(JSON.stringify(data))
-        console.log(JSON.parse(dataString)) */
 
     const handleDatosCliente = () => {
         let nombre = document.querySelector('input[name="nombre"]').value
@@ -36,7 +20,6 @@ export const DatosClienteContainer = () => {
     }
 
     const handleTyping = (e) => {
-        console.log(e.target.value)
         setNombreStorage(e.target.value)
     }
 
@@ -49,7 +32,6 @@ export const DatosClienteContainer = () => {
             setNombreStorage(JSON.parse(dataHabi).nombre)
         } else {
             localStorage.setItem('dataHabi', '{}');
-            console.log(JSON.parse(dataHabi))
         }
 
     }, [])

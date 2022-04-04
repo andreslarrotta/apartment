@@ -20,7 +20,6 @@ export const CorreoContainer = () => {
     }
 
     const handleTyping = (e) => {
-        console.log(e.target.value)
         setCorreoStorage(e.target.value)
     }
 
@@ -33,7 +32,6 @@ export const CorreoContainer = () => {
             setCorreoStorage(JSON.parse(dataHabi).correo)
         } else {
             localStorage.setItem('dataHabi', '{}');
-            console.log(JSON.parse(dataHabi))
         }
 
     }, [])

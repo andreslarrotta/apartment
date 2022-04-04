@@ -7,6 +7,8 @@ import Steps from '../../components/Steps'
 import Detalles from '../../components/Detalles'
 
 import icon from '../../assets/Icons/bbq-svgrepo-com.svg';
+import iconComunal from '../../assets/Icons/comunal-svgrepo-com.svg';
+import iconGames from '../../assets/Icons/games-svgrepo-com.svg';
 
 export const ZonasComunesContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
@@ -89,7 +91,7 @@ export const ZonasComunesContainer = () => {
                                     checked={salon}
                                     onClick={handleCheckboxSalon}
                                 />
-                                <img src={icon} alt="Salon comunal" />
+                                <img src={iconComunal} alt="Salon comunal" />
                                 Salón Comunal
                             </label>
                             <label className="steps_container_form--zona">
@@ -100,7 +102,7 @@ export const ZonasComunesContainer = () => {
                                     checked={parque}
                                     onClick={handleCheckboxParque}
                                 />
-                                <img src={icon} alt="parque de juegos" />
+                                <img src={iconGames} alt="parque de juegos" />
                                 Parque de Juegos
                             </label>
                         </div>
