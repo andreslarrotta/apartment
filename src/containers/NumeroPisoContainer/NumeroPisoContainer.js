@@ -31,7 +31,7 @@ export const NumeroPisoContainer = () => {
             localStorage.setItem('dataHabi', '{}');
         }
         document.querySelector('select[name="pisos"]').value = pisoStorage
-    }, [])
+    }, [pisoStorage])
 
 
     return (

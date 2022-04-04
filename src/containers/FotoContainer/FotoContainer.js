@@ -8,7 +8,6 @@ import Detalles from '../../components/Detalles'
 
 export const FotoContainer = () => {
     const [dataStorage, setDataStorage] = useState({})
-    const [fotoStorage, setFotoStorage] = useState('')
 
     const handleFotoApartamento = () => {
         let fotoApartamento = document.querySelector('input[name="fotoApartamento"]').value
@@ -26,7 +25,6 @@ export const FotoContainer = () => {
 
         if (dataHabi) {
             setDataStorage(JSON.parse(dataHabi))
-            setFotoStorage(JSON.parse(dataHabi).foto)
         }
 
     }, [])

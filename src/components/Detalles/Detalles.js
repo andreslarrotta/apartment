@@ -56,7 +56,7 @@ export const Detalles = () => {
             {
                 mobile &&
                 <div className="detalles_mobile_icon" onClick={handleModal}>
-                    <img src={open ? detallesIconClose : detallesIcon} />
+                    <img src={open ? detallesIconClose : detallesIcon} alt='menu mobile'/>
                 </div>
             }
             <div className="detalles">
@@ -64,7 +64,7 @@ export const Detalles = () => {
                     vacio
                         ? <div className='detalles_emply'>
                             <div className='detalles_emply_container'>
-                                <img src={emplyIcon} />
+                                <img src={emplyIcon} alt='apartamento vacio'/>
                                 <p>
                                     La información de tu apartamento esta vacía completa todos los pasos
                                 </p>
